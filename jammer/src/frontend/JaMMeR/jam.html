@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/7cfbcf5908.js"
+      crossorigin="anonymous"
+      src="wowww.js"
+    >
+        console.log('lorem100');
+      let name='jay';
+      console.log(name);
+    </script>
+    <title>JaMMeR</title>
+  </head>
+  <body>
+    <div
+      style="
+        width: 100%;
+        height: 220vh;
+
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.6) 50%,
+            rgba(0, 0, 0, 0.6) 50%
+          ),
+          url(conf.gif);
+        background-position: center;
+        background-size: cover;
+      "
+    >
+      <div
+        style="
+          width: 10%;
+          height: 100vh;
+          float: left;
+          color: beige;
+          background-color: transparent;
+        "
+        class="frst"
+      >
+        <h1>J</h1>
+        <h1>a</h1>
+        <img style="height: 4rem; width: 10rem" src="logo.gif" />
+        <h1>M</h1>
+
+        <h1>M</h1>
+
+        <h1>e</h1>
+        <h1>R</h1>
+      </div>
+      <div class="nav">
+        <a class="aboutttt" href="about.html">About</a>
+        <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Ja<img style="height: 2rem; width: 5rem;border-radius: 90%;"src="logo.gif">MMeR</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="">Upload SOngs
+            <form id="myForm">
+            <input type="file" id="file-upload" name="file-upload" required>
+            <button onclick="uploadFile()">Upload File</button>
+            <!-- <button id="sub"type="submit">Add Song</button> -->
+            </form>
+          </a>
+          <a href="musicplayer.html">My songs</a>
+          
+        </div> 
+        </div>
+        
+  
+        <a class="aboutttt" href="">Home</a>
+      </div>
+
+      <div style="width: 90%; height: 100vh; font-size: 4.5rem" class="second">
+        <p style="font-weight: bolder">Jam into music</p>
+        <p style="font-size: 2rem">
+          Stream into millions of songs for free and get exclusive offers!
+        </p>
+        <a href="musicplayer.html">
+          <button type="submit">Start Jamming!</button></a
+        >
+      </div>
+      <div
+        style="
+          background-color: black;
+          color: beige;
+          height: 50vh;
+          width: 100%;
+          font-weight: bolder;
+        "
+        class="third"
+      >
+        Top 10 TODAY!
+        <div class="swiper mySwiper boxes">
+          <div class="swiper-wrapper">
+            <div
+              style="
+                background-image: url(taylor.jpeg);
+                background-size: cover;
+                opacity: 0.4;
+              "
+              class="swiper-slide boxx"
+            >
+              Taylor Swift<br />#1
+              <div class="innerbox"></div>
+            </div>
+            <div
+              style="
+                background-image: url(zayn.jpeg);
+                background-size: cover;
+                opacity: 0.4;
+              "
+              class="swiper-slide boxx"
+            >
+              Zayn Malik<br />#2
+              <div class="innerbox"></div>
+            </div>
+            <div
+              style="
+                background-image: url(harry.jpeg);
+                background-size: cover;
+                opacity: 0.4;
+              "
+              class="swiper-slide boxx"
+            >
+              Harry Styles<br />#3
+              <div class="innerbox"></div>
+            </div>
+            <div
+              style="
+                background-image: url(edsheeran.jpeg);
+                background-size: cover;
+                opacity: 0.4;
+              "
+              class="swiper-slide boxx"
+            >
+              Ed Sheeran<br />#4
+              <div class="innerbox"></div>
+            </div>
+
+            <div
+              style="
+                background-image: url(selena.jpeg);
+                background-size: cover;
+                opacity: 0.4;
+              "
+              class="swiper-slide boxx"
+            >
+              Selena Gomez<br />#5
+              <div class="innerbox"></div>
+            </div>
+            <div
+              style="
+                background-image: url(taylor.jpeg);
+                background-size: cover;
+                opacity: 0.4;
+              "
+              class="swiper-slide boxx"
+            >
+              Taylor Swift<br />#6
+              <div class="innerbox"></div>
+            </div>
+            <div
+              style="
+                background-image: url(zayn.jpeg);
+                background-size: cover;
+                opacity: 0.4;
+              "
+              class="swiper-slide boxx"
+            >
+              Zayn Malik<br />#7
+              <div class="innerbox"></div>
+            </div>
+            <div
+              style="
+                background-image: url(harry.jpeg);
+                background-size: cover;
+                opacity: 0.4;
+              "
+              class="swiper-slide boxx"
+            >
+              Harry Styles<br />#8
+              <div class="innerbox"></div>
+            </div>
+            <div
+              style="
+                background-image: url(edsheeran.jpeg);
+                background-size: cover;
+                opacity: 0.4;
+              "
+              class="swiper-slide boxx"
+            >
+              Ed Sheeran<br />#9
+              <div class="innerbox"></div>
+            </div>
+
+            <div
+              style="
+                background-image: url(selena.jpeg);
+                background-size: cover;
+                opacity: 0.4;
+              "
+              class="swiper-slide boxx"
+            >
+              Selena Gomez<br />#10
+              <div class="innerbox"></div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-scrollbar"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            centeredSlides: false,
+            slidesPerGroupSkip: 1,
+            grabCursor: true,
+            keyboard: {
+              enabled: false,
+            },
+            breakpoints: {
+              769: {
+                slidesPerView: 5,
+                slidesPerGroup: 1,
+              },
+            },
+            // scrollbar: {
+            //   el: ".swiper-scrollbar",
+            // },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            // pagination: {
+            //   el: ".swiper-pagination",
+            //   clickable: true,
+            // },
+          });
+        </script>
+      </div>
+
+      <div
+        style="
+          background-color: black;
+          color: beige;
+          height: 50vh;
+          width: 100%;
+          margin-top: 5rem;
+          font-weight: bolder;
+        "
+        class="third"
+      >
+        New Releases!
+
+        <div class="swiper mySwiper boxes">
+          <div class="swiper-wrapper">
+            <div
+              style="
+                background-image: url(oned.jpg);
+                opacity: 0.4;
+                background-size: cover;
+            
+                color: whitesmoke;
+                font-weight: bolder;
+              "
+              class="swiper-slide boxx"
+            >
+              One<br />Direction
+              <div class="innerbox"></div>
+            </div>
+            <div
+              style="
+                background-image: url(bts.jpg);
+                background-size: cover;
+                opacity: 0.5;
+              "
+              class="swiper-slide boxx"
+            >
+              <div
+                style="
+                  opacity: 2;
+                  color: white;
+                  font-weight: bolder;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                BTS
+              </div>
+              <div class="innerbox"></div>
+            </div>
+            <div
+              style="
+                background-image: url(backboys.jpg);
+                opacity: 0.4;
+                background-size: cover;
+
+              
+                color: white;
+                font-weight: bolder;
+              "
+              class="swiper-slide boxx"
+            >
+              Back<br />Street<br />Boys
+              <div class="innerbox"></div>
+            </div>
+            <div
+              style="
+                background-image: url(marsh.jpg);
+                opacity: 0.4;
+                background-size: cover;
+                
+                color: white;
+                font-weight: bolder;
+              "
+              class="swiper-slide boxx"
+            >
+              Marsh<br />Mellow
+              <div class="innerbox"></div>
+            </div>
+            <div
+              style="
+                background-image: url(shawn.jpeg);
+                opacity: 0.4;
+                background-size: cover;
+                
+                color: white;
+                font-weight: bolder;
+              "
+              class="swiper-slide boxx"
+            >
+              Shawn<br />Mendes
+              <div class="innerbox"></div>
+            </div>
+            <div
+              style="
+                background-image: url(oned.jpg);
+                opacity: 0.4;
+                background-size: cover;
+                
+                color: whitesmoke;
+                font-weight: bolder;
+              "
+              class="swiper-slide boxx"
+            >
+              One<br />Direction
+              <div class="innerbox"></div>
+            </div>
+            <div
+              style="
+                background-image: url(bts.jpg);
+                background-size: cover;
+                opacity: 0.5;
+              "
+              class="swiper-slide boxx"
+            >
+              <div
+                style="
+                  opacity: 2;
+                  color: white;
+                  font-weight: bolder;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                BTS
+              </div>
+              <div class="innerbox"></div>
+            </div>
+            <div
+              style="
+                background-image: url(backboys.jpg);
+                opacity: 0.4;
+                background-size: cover;
+
+              
+                color: white;
+                font-weight: bolder;
+              "
+              class="swiper-slide boxx"
+            >
+              Back<br />Street<br />Boys
+              <div class="innerbox"></div>
+            </div>
+            <div
+              style="
+                background-image: url(marsh.jpg);
+                opacity: 0.4;
+                background-size: cover;
+                
+                color: white;
+                font-weight: bolder;
+              "
+              class="swiper-slide boxx"
+            >
+              Marsh<br />Mellow
+              <div class="innerbox"></div>
+            </div>
+            <div
+              style="
+                background-image: url(shawn.jpeg);
+                opacity: 0.4;
+                background-size: cover;
+              
+                color: white;
+                font-weight: bolder;
+              "
+              class="swiper-slide boxx"
+            >
+              Shawn<br />Mendes
+              <div class="innerbox"></div>
+            </div>
+          </div>
+          <div class="swiper1-button-next"></div>
+          <div class="swiper1-button-prev"></div>
+          <div class="swiper-scrollbar"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper1 = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          centeredSlides: false,
+          slidesPerGroupSkip: 1,
+          grabCursor: true,
+          keyboard: {
+            enabled: true,
+          },
+          breakpoints: {
+            769: {
+              slidesPerView: 5,
+              slidesPerGroup: 1,
+            },
+          },
+          // scrollbar: {
+          //   el: ".swiper-scrollbar",
+          // },
+          // navigation: {
+          //   nextE1: ".swiper1-button-next",
+          //   prevE1: ".swiper1-button-prev",
+          // },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="logo">Ja<img src="logo.gif" />MMeR</div>
+        <div class="links">
+          <div class="company">
+            <ul>
+              <li class="headings">COMPANY</li>
+              <li>About</li>
+              <li>Jobs</li>
+              <li>For the record</li>
+            </ul>
+          </div>
+          <div class="communities">
+            <ul>
+              <li class="headings">COMMUNITIES</li>
+              <li>For Artists</li>
+              <li>Developers</li>
+              <li>Advertising</li>
+              <li>Investors</li>
+              <li>Vendors</li>
+            </ul>
+          </div>
+          <div class="useful">
+            <ul>
+              <li class="headings">USEFUL LINKS</li>
+              <li>Support</li>
+              <li>Web Player</li>
+              <li>Free Mobile App</li>
+            </ul>
+          </div>
+        </div>
+        <div class="social">
+          <ul>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-facebook"></i></li>
+          </ul>
+        </div>
+        <div class="location">
+          <ul>
+            <li><i class="fa-solid fa-earth-asia"></i> INDIA</li>
+          </ul>
+        </div>
+        <div class="extras">
+          <ul>
+            <li>Legal</li>
+            <li>Privacy Center</li>
+            <li>Privacy Policy</li>
+            <li>Cookies</li>
+            <li>About Ads</li>
+            <li>Additional CA Privacy Disclosures</li>
+            <li class="year">
+              <i class="fa-solid fa-copyright"></i>2023 Ja<img
+                style="height: 1rem; width: 1rem"
+                src="logo.gif"
+              />MMeR
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="jam.js"></script>
+  </body>
+</html>

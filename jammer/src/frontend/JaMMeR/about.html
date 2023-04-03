@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    html {
+      font-size: 10px;
+    }
+    .testimonials {
+      background-color: transparent;
+    }
+    .container {
+      width: 90%;
+      
+      max-width: 1280px;
+      margin: auto;
+      display: grid;
+      
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: "item1 item1 item1 " "item2 item2 item2 " "item3 item3 item3 " "item4 item4 item4";
+      gap: 1rem;
+    }
+    .items {
+      align-content: start;
+      border-radius: 5px;
+      padding: 1.5rem;
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: 50px 1fr;
+      grid-template-areas: "image name" "title title" "description description";
+      gap: 1rem;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    .items img {
+      height: 50px;
+      width: 50px;
+      border-radius: 30%;
+      object-fit:cover;
+      grid-area: image;
+      align-self: center;
+    }
+    .items .name {
+      font-size: 1.6rem;
+      grid-area: name;
+      align-self: center;
+      padding-left: 0.5rem;
+      color: white;
+      font-weight: 600;
+    }
+    .items .title {
+      font-size: 1.8rem;
+      grid-area: title;
+      color: white;
+      font-weight: 600;
+    }
+    .items .description {
+      font-size: 1.6rem;
+      grid-area: description;
+      color: white;
+    }
+    .items .description::after {
+      content: '"';
+    }
+    .items .description::before {
+      content: '"';
+    }
+    .item1 {
+      background-color: transparent;
+      grid-area: item1;
+      background-image: url(quote.jpeg);
+      background-repeat: no-repeat;
+      background-size: 50px;
+      background-position: top 10% right 20px;
+    }
+    .item2 {
+      background-color: transparent;
+      grid-area: item2;
+      
+    }
+    .item3 {
+      background-color: transparent;
+      grid-area: item3;
+    }
+    .item4 {
+      background-color: transparent;
+      grid-area: item4;
+    }
+    /*
+    .item5 {
+      background-color: #181f2c;
+      grid-area: item5;
+    }*/
+  </style>
+  <body>
+    <div
+      style="
+        width: 100%;
+        height: 200vh;
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.6) 50%,
+            rgba(0, 0, 0, 0.6) 50%
+          ),
+          url(notes.gif);
+        background-position: center;
+        background-size: cover;
+      "
+    >
+      <div
+        style="
+          width: 10%;
+          height: 100vh;
+          float: left;
+          color: beige;
+          background-color: transparent;
+        "
+        class="frst"
+      >
+        <h1>J</h1>
+        <h1>a</h1>
+        <img style="height: 4rem; width: 10rem" src="logo.gif" />
+        <h1>M</h1>
+
+        <h1>M</h1>
+
+        <h1>e</h1>
+        <h1>R</h1>
+      </div>
+      <div class="nav">
+        <a class="aboutttt" href="about.html">About</a>
+        <a class="aboutttt" href="loggooo.html">Login</a>
+        <a class="aboutttt" href="jam.html">Home</a>
+      </div>
+    <div>
+      <h1 style="text-align: center; margin: 1.5rem">Profiles</h1>
+    </div>
+    <section class="testimonials">
+      <div class="container">
+        <div class="items item1">
+          <img src="Meghana.jpg" alt="" />
+          <p class="name">Krishna Meghana</p>
+          <p class="title">
+            Backend Developer
+          </p>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque at
+            dicta, dolores molestiae dignissimos nisi voluptates ipsa minus quo
+            ullam voluptatum, reiciendis rem libero pariatur vero? Perspiciatis
+            illum accusantium rerum!
+          </p>
+        </div>
+        <div  class="items item2">
+          <img src="Mounika.jpg" alt="" />
+          <p class="name">Mouni Mounika</p>
+          <p class="title">Backend Developer</p>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Praesentium adipisci illo magnam, sint dolores placeat eos?
+            Aspernatur quis excepturi voluptatum.
+          </p>
+        </div>
+        <div class="items item3">
+          <img src="pet3.jpg" alt="" />
+          <p style="color: " class="name">Reshma</p>
+          <p style="color:" class="title">
+            Frontend Developer
+          </p>
+          <p style="color:" class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
+            praesentium error dolor deleniti alias deserunt ut veritatis aut,
+            sequi provident dolorem iure non, veniam corporis eaque! Maiores
+            magnam adipisci, veniam reprehenderit ea, facilis fugiat similique,
+            laboriosam quos minus nam quam laudantium esse corrupti repellendus?
+            Eveniet fugit quae incidunt quasi distinctio voluptates mollitia
+            quos est corrupti pariatur, perspiciatis facilis error quis.
+            Doloribus numquam similique inventore fugiat, recusandae minima sit
+            veritatis cupiditate delectus temporibus, fuga corporis? Veniam
+            architecto esse exercitationem ullam iste.
+          </p>
+        </div>
+        <div class="items item4">
+          <img src="Jaaaayyyyy.jpeg" alt="" />
+          <p style="color: " class="name">Kona Jayanth</p>
+          <p style="color: " class="title">Frontened Developer.</p>
+          <p style="color: " class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+            fugit dignissimos eum, doloremque non cumque?
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

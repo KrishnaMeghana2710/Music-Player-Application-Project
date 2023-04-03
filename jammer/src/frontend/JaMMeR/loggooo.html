@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="logggooo.css"/>
+    <title>Document</title>
+  </head>
+  <style>
+    section.banner {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      background-image: url(./media/bg.jpg);
+      background-size: cover;
+      /* justify-content: center; */
+    }
+    section.banner h1 {
+      font-size: 8rem;
+      line-height: 1;
+    }
+    section.box {
+      font-size: 1.6rem;
+      margin: 2rem 0;
+      text-align: center;
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+      height: 70vh;
+      width: 50rem;
+      /* border: 1px solid#000000; */
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      margin-top: 7rem;
+      background-color: rgba(255, 253, 253, 0.176);
+      border-radius: 25px;
+    }
+    .form h1 {
+      color: #ffffff;
+      font-size: 2rem;
+      border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+      margin: 40px;
+    }
+    .box {
+      padding: 12px;
+      margin: 20px;
+      width: 60%;
+      height: 100vh;
+      border: none;
+      outline: none;
+      /* border-radius: 20px; */
+      background-color: rgba(0, 0, 0, 0.192);
+      box-shadow: inset -3px -3px rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 1.8rem;
+    }
+
+    #submit {
+      padding: 10px;
+      margin-top: 20px;
+      width: 40%;
+      background-color: rgba(0, 0, 0, 0.352);
+      padding: 12px;
+      color: #ffffff;
+      box-shadow: inset -3px -3px rgba(0, 0, 0, 0.5);
+      border-radius: 20px;
+      font-size: 1rem;
+      border: none;
+      outline: none;
+    }
+    #submit:hover {
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    .mssg {
+      color: #ffffff;
+      margin-top: 2rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .mssg1 {
+      color: #ffffff;
+      margin-top: 1rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 3rem;
+    }
+    .mssg1 a {
+      color: white;
+    }
+    ::placeholder {
+      color: #ffffff;
+      opacity: 0.7;
+    }
+  </style>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="logggooo.css" />
+        <script
+          src="https://kit.fontawesome.com/7cfbcf5908.js"
+          crossorigin="anonymous"
+        ></script>
+        <title>JaMMeR</title>
+      </head>
+      <body>
+        <div
+          style="
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.6) 50%,
+                rgba(0, 0, 0, 0.6) 50%
+              ),
+              url(conf.gif);
+            background-position: center;
+            background-size: cover;
+          "
+        >
+          <div
+            style="
+              width: 10%;
+              height: 100vh;
+              float: left;
+              color: beige;
+              background-color: transparent;
+            "
+            class="frst"
+          >
+            <h1>J</h1>
+            <h1>a</h1>
+            <img style="height: 4rem; width: 10rem" src="logo.gif" />
+            <h1>M</h1>
+
+            <h1>M</h1>
+
+            <h1>e</h1>
+            <h1>R</h1>
+          </div>
+          <div class="nav">
+            <a class="aboutttt" href="about.html">About</a>
+            <a class="aboutttt" href="about.html">Login</a>
+            <a class="aboutttt" href="jam.html">Home</a>
+          </div>
+          <section>
+            <div class="container1">
+              <span class="title"><h2>Sign Up</h2></span>
+              <form action="./loginpage.html" method="post" id="signup-form" onsubmit="return validateForm()">
+                <div class="details">
+                  <div class="form first">
+                      <div class="fields">
+                                   
+                                      <div class="input-field">
+                                        <label for="song-name">Song Name:</label>
+                                        <input type="text" id="song-name" name="song-name" required>
+                                      </div><br>
+                                      <div class="input-field">
+                                        <label for="artist-name">Artist Name:</label>
+                                        <input type="text" id="artist-name" name="artist-name" required>
+                                      </div><br>
+                                      <div class="input-field">
+                                        <label for="Favourite">Favourite?</label>
+                                        <select id="Favourite" name="Favourite" required>
+                                        <option value="">-- Select Yes or No --</option>
+                                        <option value="male">Yes</option>
+                                        <option value="female">No</option>
+                                        
+                                        </select><br>
+                                        <!-- <div class="input-field">
+                                          <label for="file-upload">Upload file:</label>
+                                          <input type="file" id="file-upload" name="file-upload" required> -->
+                                        </div><br>
+                                        <!-- <button id="sub"type="submit">Add Song</button>   -->
+                                      <!-- </div>
+                                      <div class="input-field">
+                                        <label for="dob">Date of Upload:</label>
+                                        <input type="date" id="dob" name="dob" required>
+                                      </div>
+                                      <div class="input-field">
+                                        <label for="email">Email:</label>
+                                        <input type="text" id="email" name="email" required>
+                                      </div>
+                                      <p id="error-message"></p>
+                                      <div class="input-field">
+                                        <label for="phone">Phone Number:</label>
+                                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                                      </div>
+                                      <div class="input-field">
+                                        <label for="password">Password:</label>
+                                        <input type="password" id="password" name="password" minlength="8"maxlength="20" 
+                                        required
+                                        pattern="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{8,}" 
+                                        title="Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, and one number">
+                                      </div>
+                                      <div class="input-field">
+                                        <label for="confirm-password">Confirm Password:</label>
+                                        <input type="password" id="confirm-password" name="confirm-password" minlength="8" required>
+                                      </div>
+                                      <div class="ss">
+                                        <a href="#"><button id="but" type="button">Security Question</button></a>
+                                        <button id="sub"type="submit">Sign Up</button>
+                                      </div> -->
+                                      <!-- <p id="error-message"></p> -->
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <!-- <a href="https://www.instagram.com/"><li><i class="fa-brands fa-instagram"></i></li></a>
+                  <a href="https://twitter.com/"><li><i class="fa-brands fa-square-twitter"></i></li></a> -->
+            </div>
+          </section>
+          
+          
+        
+      </body>
+    </html>
+    <script src="loggoo.js"></script>
+  </body>
+</html>

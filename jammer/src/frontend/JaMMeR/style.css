@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+html{
+    font-size: 10px;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+
+}
+.frst{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+
+}
+#content{
+    z-index: 0;
+    position: absolute;
+}
+body{
+    left: 0;
+    top: 0;
+    margin: 0px;
+    padding: 0px;
+}
+.notes.gif{
+    opacity: 0.1;
+}
+.second{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+}
+.second button{
+    background-color:beige   ;
+    border: none;
+    width: 19rem;
+    height: 4rem;
+    font-family:'Poppins',sans-serif ;
+    color: #2941AB;
+    font-weight: 600;
+    border-radius: 1.8rem;
+    padding: 1rem 2.7rem;
+    margin: 4rem 0;
+    font-size: 1.4rem;
+}
+.second button:hover{
+    transform: scale(110%,110%);
+    cursor: pointer;
+    box-shadow: #2941AB;
+}
+.third{
+    text-align: center;
+    font-size: 3.5rem;
+    
+}
+.boxes{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    width:100%;
+    align-items: center;
+
+}
+.swiper{
+    width:100%;
+
+}
+
+navigation{
+    color: wheat;
+}
+.boxx{
+    border-radius: 0.3rem;
+    height: 19rem; 
+    width: 15rem; 
+    background-color: black;
+    color:pink;
+    font-weight: bolder;
+    
+}
+.innerbox{
+    display: flex;
+    height:3rem;
+    width: 15rem;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    margin-top: 16rem;
+}
+.nav{
+    
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 2.5rem;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    height: 73px;
+    opacity: 0.7;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+.nav a:hover{
+    cursor: pointer;
+    color: plum;
+    
+    transform: scale(105%,105%);
+}
+.nav a{
+    color: bisque;
+    margin: 2.5rem;
+    font-weight: bolder;
+    text-decoration: none;
+
+}
+/*"color: beige; margin: 2.5rem; font-weight: bolder"*/
+footer{
+    background-color: black;
+}
+
+footer div.container{
+    width:90%;
+    margin:auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding:6rem 0 4rem 0;
+}
+footer .links{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    justify-content: space-evenly;
+}
+
+footer .logo img{
+    width:10rem;
+    height:5rem;
+    color: white;
+    border-radius: 50%;
+}
+footer .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: wheat;
+}
+footer .logo img:hover{
+    cursor: pointer;
+    color:#A3CE3F;
+}
+footer .links ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    padding:1.3rem;
+    color: white;
+}
+footer .links ul li:hover{
+    cursor: pointer;
+    color: #1ed760;
+}
+footer ul li.headings{
+    color:#919496;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+footer ul li.headings:hover{
+    cursor:auto;
+    color: #919496;
+}
+footer .social{
+    flex-grow: 1;
+    margin:20px 0;
+}
+footer .social ul {
+    display: flex;
+    flex-direction: row;
+
+}
+footer .social ul li{
+    font-size: 2.6rem;
+    background-color: white;
+    height:5.5rem;
+    width:5.5rem;
+    margin:0 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 70%;
+
+}
+footer .social ul li:hover{
+    color: black;
+    cursor: pointer;
+    transform: scale(104%,104%);
+}
+footer .location ul li{
+    list-style: none;
+}
+footer .extras ul li{
+    list-style: none;
+}
+footer .location{
+    width: 100%;
+    margin-top:10rem;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+    color: #919496;
+
+}
+footer .location ul li:hover{
+    cursor: pointer;
+    color: #1ed760;
+}
+footer.location i{
+    align-self: center;
+    padding:0 1rem;
+}
+footer .extras{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .extras ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer .extras li.year{
+    align-items: flex-end;
+}
+footer .extras ul li{
+    font-size: 1.2rem;
+    color:#919496;
+    padding: 1rem;
+    
+}
+.boxes .boxx:hover{
+    opacity: 0.9;
+    cursor: pointer;
+    transform: scale(105%,105%);
+}
+.dropbtn {
+    background-color: transparent;
+    color: bisque;
+    padding: 16px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.557);
+    min-width: 100px;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: beige;
+    padding: 0.5rem;
+    text-decoration: none;
+    display: block;
+    font-size: 1.7rem;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {transform: scale(103%,103%);color: plum;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;background-color: rgba(255, 255, 255, 0.37);}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {transform: scale(103%,103%);color: plum;}
