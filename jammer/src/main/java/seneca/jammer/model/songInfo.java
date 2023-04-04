@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 public class songInfo {
-
+    
     private String songname;
     private String artistName;
 
